@@ -1,6 +1,6 @@
 # mybatis-cloud-config-demo
 
-This demo application provide two sample as follow features:
+This demo application provide samples for following two features.
 
 * Refreshable `DataSource` with MyBatis
 * Refreshable MyBatis configuration
