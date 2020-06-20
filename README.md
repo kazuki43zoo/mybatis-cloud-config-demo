@@ -123,7 +123,7 @@ spring.profiles.active=refreshable-mybatis
 > spring.cloud.refresh.refreshable=org.apache.ibatis.session.SqlSessionFactory,org.mybatis.spring.mapper.MapperFactoryBean
 > ```
 > 
-> An actual configuration file refer to [`aoolication-refreshable-mybatis.properties`](/src/main/resources/aoolication-refreshable-mybatis.properties)
+> An actual configuration file refer to [`application-refreshable-mybatis.properties`](/src/main/resources/application-refreshable-mybatis.properties)
 >
 > Related with https://github.com/mybatis/spring/issues/476
 
