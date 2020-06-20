@@ -25,7 +25,6 @@ public class RefreshableDataSourceConfig {
   @Bean
   @RefreshScope
   DataSource dataSource(@Value("${db.name:current}") String dbName) {
-    System.out.println(dbName);
     return new EmbeddedDatabaseBuilder()
         .setType(EmbeddedDatabaseType.H2)
         .setName(dbName)

@@ -9,6 +9,7 @@ import java.util.Map;
 @Mapper
 public interface SettingsMapper {
 
+  // Replace placeholder('db.version') using configuration property of MyBatis on initialization phase
   @Select("SELECT s.* , '${db.version:v1}' as version FROM settings s ORDER BY key")
   List<Map<String, String>> findAll();
 
