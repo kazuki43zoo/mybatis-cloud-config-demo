@@ -82,7 +82,7 @@ $ curl http://localhost:8080/settings
 
 #### Change datasource configuration
 
-Change 'db.name' to 'current'.
+Change 'db.name' to 'current' from 'v1'.
 
 ```
 $ echo "message = Hello by config server!
@@ -133,7 +133,7 @@ spring.profiles.active=refreshable-mybatis
 
 ```
 $ curl http://localhost:8080/settings
-[{"VERSION":"1.0.0","VALUE":"default database","KEY":"name"},{"VERSION":"1.0.0","VALUE":"0","KEY":"timeout"}]%
+[{"VERSION":"1.0.0","VALUE":"default database","KEY":"name"},{"VERSION":"1.0.0","VALUE":"0","KEY":"timeout"}]
 ```
 
 #### Change datasource configuration
