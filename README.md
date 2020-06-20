@@ -64,7 +64,7 @@ spring.profiles.active=refreshable-ds
 >
 > **NOTE:**
 > 
-> About bean configuration refer to `RefreshableDataSourceConfig`
+> About bean configuration refer to [`RefreshableDataSourceConfig`](/src/main/java/com/example/demo/RefreshableDataSourceConfig.java)
 
 >
 > **IMPORTANT:**
@@ -117,7 +117,7 @@ spring.profiles.active=refreshable-mybatis
 
 > **NOTE:**
 > 
-> About bean configuration refer to `RefreshableMyBatisConfig`
+> About bean configuration refer to [`RefreshableMyBatisConfig`](/src/main/java/com/example/demo/RefreshableMyBatisConfig.java)
 
 >
 > **IMPORTANT:**
