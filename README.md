@@ -70,6 +70,8 @@ spring.profiles.active=refreshable-ds
 > **IMPORTANT:**
 > 
 > **In this version, the spring-boot cannot enable auto-configure of MyBatis Spring Boot when DataSource is refresh scope ...**
+>
+> See https://github.com/spring-projects/spring-boot/issues/22038
 
 #### Access before changing configuration
 
