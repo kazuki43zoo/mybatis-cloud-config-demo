@@ -117,13 +117,15 @@ spring.profiles.active=refreshable-mybatis
 
 > **NOTE:**
 > 
-> About bean configuration refer to [`RefreshableMyBatisConfig`](/src/main/java/com/example/demo/RefreshableMyBatisConfig.java)
-
+> You can change MyBatis's beans to refresh scope using 'spring.cloud.refresh.refreshable' property provided spring-cloud as follow:
 >
-> **IMPORTANT:**
+> ```properties
+> spring.cloud.refresh.refreshable=org.apache.ibatis.session.SqlSessionFactory,org.mybatis.spring.mapper.MapperFactoryBean
+> ```
 > 
-> **In this version, The mybatis-spring does not support to scan mappers as refresh scope bean(scoped proxy bean) in current version ...**
-> (Related with https://github.com/mybatis/spring/issues/476)
+> An actual configuration file refer to [`aoolication-refreshable-mybatis.properties`](/src/main/resources/aoolication-refreshable-mybatis.properties)
+>
+> Related with https://github.com/mybatis/spring/issues/476
 
 #### Access before changing configuration
 
