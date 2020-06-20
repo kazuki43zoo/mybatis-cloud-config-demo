@@ -46,10 +46,10 @@ Hello by config server!
 
 ```
 $ curl http://localhost:8080/settings
-[{"VERSION":"1.0.0","VALUE":"default database","KEY":"name"},{"VERSION":"1.0.0","VALUE":"0","KEY":"timeout"}]
+[{"VERSION":"1.0.0","VALUE":"v1 database","KEY":"name"},{"VERSION":"1.0.0","VALUE":"2000","KEY":"timeout"}]
 ```
 
-## Hoe to execute demo 
+## Try to execute demo 
 
 ### Refreshable `DataSource` with MyBatis
 
@@ -79,6 +79,8 @@ $ curl http://localhost:8080/settings
 ```
 
 #### Change datasource configuration
+
+Change 'db.name' to 'current'.
 
 ```
 $ echo "message = Hello by config server!
@@ -127,10 +129,12 @@ spring.profiles.active=refreshable-mybatis
 
 ```
 $ curl http://localhost:8080/settings
-[{"VERSION":"1.0.0","VALUE":"default database","KEY":"name"},{"VERSION":"1.0.0","VALUE":"0","KEY":"timeout"}]
+[{"VERSION":"1.0.0","VALUE":"default database","KEY":"name"},{"VERSION":"1.0.0","VALUE":"0","KEY":"timeout"}]%
 ```
 
 #### Change datasource configuration
+
+Change 'mybatis.configuration-properties.db.version' to '2.0.0' from '1.0.0'.
 
 ```
 $ echo "message = Hello by config server!

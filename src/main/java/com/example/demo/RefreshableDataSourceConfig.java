@@ -28,8 +28,7 @@ public class RefreshableDataSourceConfig {
     return new EmbeddedDatabaseBuilder()
         .setType(EmbeddedDatabaseType.H2)
         .setName(dbName)
-        .addDefaultScripts()
-        .addScripts("classpath:data-" + dbName + ".sql").build();
+        .addScripts("classpath:schema.sql", "classpath:data-" + dbName + ".sql").build();
   }
 
   // The spring-boot cannot enable auto-configure of MyBatis Spring Boot when DataSource is refresh scope.
